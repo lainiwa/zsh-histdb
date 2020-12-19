@@ -135,6 +135,7 @@ EOF
 
 _histdb_addhistory () {
     local cmd="${1[0, -2]}"
+    cmd=${cmd%% }
 
     for boring in "${_BORING_COMMANDS[@]}"; do
         if [[ "$cmd" =~ $boring ]]; then
