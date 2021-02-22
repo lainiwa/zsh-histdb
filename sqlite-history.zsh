@@ -110,7 +110,8 @@ EOF
 }
 
 declare -ga _BORING_COMMANDS
-_BORING_COMMANDS=("^ls$" "^cd$" "^ " "^histdb" "^top$" "^htop$")
+# _BORING_COMMANDS=("^ls$" "^cd$" "^ " "^histdb" "^top$" "^htop$")
+_BORING_COMMANDS=( )
 
 if [[ -z "${HISTDB_TABULATE_CMD[*]:-}" ]]; then
     declare -ga HISTDB_TABULATE_CMD
